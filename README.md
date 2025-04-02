@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/daemoncibsec/subenumerator/blob/main/subenumerator-logo.png" alt="subenumerator" width="200px">
+  <img src="https://github.com/daemoncibsec/subenumerator/blob/main/subenumerator-logo.png" alt="subenumerator" width="500px">
   <br>
 </h1>
 
