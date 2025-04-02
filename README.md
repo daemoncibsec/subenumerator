@@ -3,9 +3,6 @@
   <br>
 </h1>
 
-# SubEnumerator
-
-
 Sunenumerator is a tool written in Python to allow the cybersecurity specialist having a quick lookup to accessible webpages, redirections and other types of codes in web pages, and automate it's recon of the target. The tool shines specially in Bug Bounty, where many domains exists but only few are accessible
 
 ## Installation
