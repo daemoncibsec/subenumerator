@@ -3,7 +3,7 @@
   <br>
 </h1>
 
-Subenumerator is a fast and easy-to-usetool that allows to automatize subdomains recon. It written in Python to allow the cybersecurity specialist having a quick lookup to accessible webpages, redirections and other types of codes in web pages. The tool shines specially in Bug Bounty, where many domains exists but only few are accessible.
+Subenumerator is a fast and easy-to-use tool that allows to automatize subdomains recon. It written in Python to allow the cybersecurity specialist having a quick lookup to accessible webpages, redirections and other types of codes in web pages. The tool shines specially in Bug Bounty, where many domains exists but only few are accessible.
 
 ## Installation
 
