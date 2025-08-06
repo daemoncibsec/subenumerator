@@ -43,7 +43,7 @@ try:
                 if args.output:
                     response_list.append(f"{counter}\tTimeout reached\t\t\t{url}")
             except httpx.HTTPStatusError:
-                print('{counter}\t{r.status_code}\t\t\t\t{url}')
+                print('{counter}\t{r.status_code}\t\t\t{url}')
                 if args.output:
                     response_list.append(f"{counter}\t{r.status_code}\t\t\t\t{url}")
             except httpx.RequestError as e:
@@ -52,7 +52,7 @@ try:
                     if args.output:
                         response_list.append(f"{counter}\tNo hostname associated\t\t{url}")
                 elif "Name or service not known" in str(e):
-                    print(f"{counter}\tName or service not known\t\t{url}")
+                    print(f"{counter}\tName or service not known\t{url}")
                     if args.output:
                         response_list.append(f"{counter}\tName or service not known\t{url}")
                 elif "Connection refused" in str(e):
@@ -71,6 +71,14 @@ try:
                     print(f"{counter}\tSSL handshake failed\t\t{url}")
                     if args.output:
                         response_list.append(f"{counter}\tSSL handshake failed\t\t{url}")
+                elif "Connection reset by peer" in str(e):
+                    print(f"{counter}\tConnection reset by peer\t{url}")
+                    if args.output:
+                        response_list.append(f"{counter}\tSSL handshake failed\t\t{url}")
+                elif "Temporary failure in name resolution" in str(e):
+                    print(f"{counter}\tName resolution failure\t\t{url}")
+                    if args.output:
+                        response_list.append(f"{counter}\tTemporary failure in name resolution\t\t{url}")
                 else:
                     print(f"{counter}\t{e}\t\t\t{url}")
                     if args.output:
