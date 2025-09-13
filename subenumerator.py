@@ -79,6 +79,10 @@ try:
                     print(f"{counter}\tName resolution failure\t\t{url}")
                     if args.output:
                         response_list.append(f"{counter}\tTemporary failure in name resolution\t\t{url}")
+                elif "tlsv1 alert internal error" in str(e):
+                    print(f"{counter}\tTLSv1 alert internal error\t{url}")
+                    if args.output:
+                        response_list.append(f"{counter}\tTLSv1 alert internal error\t{url}")
                 else:
                     print(f"{counter}\t{e}\t\t\t{url}")
                     if args.output:
