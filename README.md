@@ -24,8 +24,6 @@ sudo cp subenumerator /usr/bin/
 ```
 ## Usage/Examples
 
-- [Video example](https://www.instagram.com/reel/DH9HUYUOoHo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
-
 ```bash
 python3 subenumerator.py -h
 ```
@@ -35,6 +33,11 @@ In case you have the script compiled with cython and gcc:
 ```bash
 subenumerator -h
 ```
+
+## Demonstration
+
+- [Video demonstration](https://www.instagram.com/p/DQAIrC4j8YU/)
+
 ## Authors
 
 - [@daemoncibsec](https://www.github.com/daemoncibsec)
